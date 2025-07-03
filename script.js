@@ -1,4 +1,3 @@
-// Book Class
 class Book {
   constructor(title, author, pages, isRead) {
     this.id = Date.now().toString();
@@ -110,7 +109,6 @@ themeToggle.addEventListener('click', () => {
   const isDark = document.documentElement.classList.contains('dark');
   themeToggle.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
   
-  // Save preference to localStorage
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
@@ -123,5 +121,4 @@ if (savedTheme === 'dark') {
   themeToggle.textContent = '🌙 Dark Mode';
 }
 
-// Initial Render
 renderBooks();
