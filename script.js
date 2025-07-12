@@ -23,7 +23,6 @@ const closeModal = document.querySelector('.close-modal');
 const themeToggle = document.getElementById('theme-toggle');
 
 myLibrary.push(new Book("The Hobbit", "J.R.R. Tolkien", 310, false));
-myLibrary.push(new Book("Dune", "Frank Herbert", 412, true));
 
 
 function renderBooks() {
